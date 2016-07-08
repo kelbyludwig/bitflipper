@@ -15,7 +15,7 @@ func main() {
 	bytes, err := base64.StdEncoding.DecodeString(b64Data)
 
 	if err != nil {
-		fmt.Println("[ERR] Invalid base64 input data. Did you forget the 'b' flag?")
+		fmt.Println("[ERR] Invalid base64 input data. Did you forget the 'b' flag? Example usage:\ngo run bitflipper.go -b <base64 data> > outfile")
 		return
 	}
 
